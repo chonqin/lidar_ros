@@ -1,6 +1,7 @@
 # YDLIDAR 拆机雷达测试程序
 
 这是一个为闲鱼店：**咸鱼改装工作站** 拆机雷达（YDLIDAR）编写的 ROS 测试程序。
+plot.py可以直接运行，用于基础测试。
 
 ## 🎯 概览
 
@@ -85,7 +86,7 @@ $$
 ## 💻 本测试程序架构 (noetic)
 
 * 本测试无角度修正
-* **`lidar_driver.py` (Python 驱动)**
+* **`lidar_driver.py` (Python 驱动)**，由gemini从plot.py修改而来。
     * **职责**: 使用 `pyserial` 在 `150000` 波特率下安全读取串口。
     * **发布**: ` /lidar/raw_packet` (`std_msgs/UInt8MultiArray`)。
 * **`lidar_parser.cpp` (C++ 解析器)**
