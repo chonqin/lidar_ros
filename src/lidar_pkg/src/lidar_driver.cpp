@@ -31,7 +31,6 @@ class LidarParser
         pub_ = nh.advertise<sensor_msgs::LaserScan> ("scan", 10);
 
         // 初始化订阅者: 订阅来自 Python 节点的 /lidar/raw_packet
-        // 当消息到达时, 调用 LidarParser::rawPacketCallback
         sub_ = nh.subscribe ("/lidar/raw_packet", 10,
                              &LidarParser::rawPacketCallback, this);
 
@@ -44,7 +43,7 @@ class LidarParser
 
   private:
     /**
-     * @brief 存储单个雷达点的数据结构 (与之前相同)
+     * @brief 存储单个雷达点的数据结构
      */
     struct LidarPoint
     {
