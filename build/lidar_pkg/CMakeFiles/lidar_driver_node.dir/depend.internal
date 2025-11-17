@@ -59,9 +59,10 @@ lidar_pkg/CMakeFiles/lidar_driver_node.dir/src/lidar_driver.cpp.o
  /opt/ros/noetic/include/ros/wall_timer_options.h
  /opt/ros/noetic/include/rosconsole/macros_generated.h
  /opt/ros/noetic/include/sensor_msgs/LaserScan.h
- /opt/ros/noetic/include/serial/serial.h
- /opt/ros/noetic/include/serial/v8stdint.h
  /opt/ros/noetic/include/std_msgs/Header.h
+ /opt/ros/noetic/include/std_msgs/MultiArrayDimension.h
+ /opt/ros/noetic/include/std_msgs/MultiArrayLayout.h
+ /opt/ros/noetic/include/std_msgs/UInt8MultiArray.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
  /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
  /root/lidar_ws/src/lidar_pkg/src/lidar_driver.cpp
