@@ -19,7 +19,7 @@ import struct # 我们需要 struct 来获取 LSN
 # --- ROS 和 Lidar 配置 ---
 NODE_NAME = 'lidar_raw_driver'
 RAW_PACKET_TOPIC = '/lidar/raw_packet'
-PORT = '/dev/ttyUSB0'
+PORT = '/dev/ttyACM0'
 BAUDRATE = 150000
 
 def run_driver():

@@ -8,7 +8,7 @@ import queue
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
-PORT = '/dev/ttyUSB0'
+PORT = '/dev/ttyACM0'
 BAUDRATE = 150000
 
 

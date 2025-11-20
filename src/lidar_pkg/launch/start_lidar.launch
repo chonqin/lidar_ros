@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="lidar_pkg" type="lidar_driver.cpp" name="lidar_driver.cpp" output="screen" />
+    <node pkg="lidar_pkg" type="lidar_driver.py" name="lidar_driver.py" output="screen" />
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find lidar_pkg)/config/lidar.rviz" />
+</launch>
